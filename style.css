@@ -1,0 +1,107 @@
+*, *:before, *:after {
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    -o-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+}
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+input {
+    all: unset;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(31, 31, 31);
+}
+.weather {
+    position: relative;
+    width: 450px;
+    height: 600px;
+    padding: 40px;
+    border-radius: 15px;
+    background: rgb(6,36,0);
+    background: rgb(174,238,174);
+    background: linear-gradient(140deg, rgba(174,238,174,1) 0%, rgba(3,68,128,1) 100%);
+}
+.weather__search {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.weather__search-inp{
+    width: 290px;
+    height: 60px;
+    background-color: #e8e8e8;
+    border-radius: 50px;
+    padding: 0 40px;
+    font-size: 20px;
+    color: #494949;
+    border: 2px solid transparent;
+}
+.weather__search-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: #e8e8e8;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.weather__search-btn::before {
+    content: url('img/search_ico.svg');
+    width: 40px;
+    opacity: .3;
+}
+.weather__search-btn::before:hover {
+    opacity: 1;
+}
+.weather__temp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.weather__temp-img {
+    width: 150px;
+}
+.weather__temp-celsius {
+    font-size: 80px;
+    font-weight: 500;
+}
+.weather__temp-city {
+    font-size: 50px;
+    font-weight: 200;
+}
+.weather__optional {
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    width: 400px;
+    bottom: 40px;
+    left: 20px;
+}
+.weather__optional-elem {
+    display: flex;
+}
+.weather__optional-elem > img {
+    width: 60px;
+    filter: invert(1);
+}
+.weather__optional-details {
+    color: #fff;
+    font-weight: 300;
+    margin-left: 10px;
+}
+.weather__optional-wind, .weather__optional-humidity{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
