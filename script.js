@@ -1,5 +1,5 @@
 const temp = document.querySelector('.temp')
-const apiKey = 'd5d6dd942f4191310434d453276c1fc6'
+const apiKey = 'yourToken'
 const search = document.querySelector('.weather__search-btn')
 const inputCity = document.querySelector('.weather__search-inp')
 const tempCity = document.querySelector('.weather__temp-celsius')
